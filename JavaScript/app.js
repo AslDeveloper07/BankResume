@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const close = document.querySelector('.close');
 const aside = document.querySelector('.aside');
 const blurr = document.querySelector('.blur');
+const accordion_content = document.querySelector('.accordion-content');
 menu.addEventListener('click', function () {
     aside.classList.remove('transform');
     blurr.style.display = 'block';
@@ -25,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (item.classList.contains("active")) {
                 item.classList.remove("active");
+                setTimeout(() => {
+                    accordion_content.style.translateY = '10px';
+                }, 100)
                 icon.classList.replace("ri-subtract-line", "ri-add-line");
             } else {
                 document.querySelectorAll(".accordion-item").forEach(i => {

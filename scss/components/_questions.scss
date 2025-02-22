@@ -3,12 +3,14 @@
 
 .question {
     @include mixin.flexbox(space-between, start, 120px, row);
+
     @media screen and (max-width: 480px) {
-    @include mixin.flexbox(space-between, start, 120px, column);
+        @include mixin.flexbox(space-between, start, 120px, column);
     }
 
     &__txt {
         width: 600px;
+
         @media screen and (max-width: 480px) {
             padding: 0 20px;
             width: 463px;
@@ -16,9 +18,11 @@
             top: 60px;
 
         }
+
         h2 {
             font-size: 40px;
             font-weight: 800;
+
             @media screen and (max-width: 480px) {
                 font-size: 35px;
                 text-align: center;
@@ -29,47 +33,57 @@
             font-size: 16px;
             margin-top: 20px;
             color: #333;
+
             @media screen and (max-width: 480px) {
                 text-align: center;
             }
         }
 
         #feedback-btn {
-            @include mixin.button(20px,   #007DB6,18px);
+            @include mixin.button(20px, #007DB6, 18px);
 
             @media screen and (max-width: 480px) {
                 width: 100%;
             }
         }
     }
+
     .accordion {
         border: none;
         border-top: 1px solid #ddd;
         width: 70%;
+
         @media screen and (max-width: 480px) {
             width: 100%;
             padding: 0 20px;
         }
     }
+
     .accordion-item {
+        overflow: hidden;
         border: 2px solid #007DB6;
         border-radius: 20px;
         margin-bottom: 15px;
         transition: all 0.3s ease-in-out;
+
         &.active {
             .accordion-content {
+                transition: all 0.2s ease;
                 display: block;
+                transform: translateY(-10px);
                 opacity: 1;
-                transform: scaleY(1);
             }
+
             .accordion-header i {
                 transform: rotate(360deg);
                 transition: transform 0.4s ease-in-out;
             }
         }
     }
+
     .accordion-header {
-    @include mixin.flexbox(space-between, center, '', '');
+        overflow: hidden;
+        @include mixin.flexbox(space-between, center, '', '');
 
         width: 100%;
         background: transparent;
@@ -79,7 +93,9 @@
         padding: 15px;
         cursor: pointer;
         outline: none;
+
     }
+
     .accordion-content {
         border: none;
         border-radius: 10px;
