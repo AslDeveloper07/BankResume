@@ -1,0 +1,81 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+
+.diagnostic {
+    @include mixin.flexbox(flex-start, center, '', column);
+
+    @media screen and (max-width: 480px) {
+        display: none;
+        .diagnostic__card {
+            width: 100%;
+            overflow-x: scroll
+        }
+    }
+
+    &__txt {
+        @include mixin.flexbox(space-between, start, 200px, row);
+        margin-top: 90px;
+
+        .txt1 {
+            h1 {
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+
+        .txt2 {
+            width: 400px;
+
+            #diagnostic_btn {
+                @include mixin.button(20px, #007DB6,18px);
+            }
+        }
+
+        .txt3 {
+            margin-left: 280px;
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
+        }
+    }
+
+    &__card {
+        margin-top: 30px;
+        @include mixin.flexbox(space-between, end, 68px, row);
+
+        .box1 {
+            @include mixin.flexbox(space-between, center, '', column);
+            border-radius: 15px;
+            width: 300px;
+            background-color: #F4F9FB;
+            margin-bottom: 80px;
+            padding: 0 20px;
+            @media screen and (max-width: 480px) {
+            width: 500px;
+
+            }
+
+            img {
+                width: 120px;
+                position: relative;
+                top: 50px;
+
+            }
+
+            .txt {
+                text-align: center;
+
+                h3 {
+                    font-size: 32px;
+                    font-weight: 800;
+                    position: relative;
+                    top: -30px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+
+.home {
+    background-color: #F4F9FB;
+
+    .house {
+        @media screen and (max-width: 480px) {
+            @include mixin.flexbox(space-between, center, '', column-reverse);
+            padding:  0 20px;
+
+        }
+
+        height: 550px;
+        @include mixin.flexbox(space-between, center, '', row);
+
+        &__home-txt {
+            @media screen and (max-width: 480px) {
+        @include mixin.flexbox(space-between, center, '', column);
+
+            }
+
+            h1 {
+                font-size: 70px;
+                line-height: 60.75px;
+
+                @media screen and (max-width: 480px) {
+                    text-align: center;
+                    font-size: 50px;
+                    margin-top: 80px;
+                    line-height: 40.15px;
+                }
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 22px;
+                @media screen and (max-width: 480px) {
+                    text-align: center;
+                font-size: 18px;
+                }
+            }
+
+            button {
+                @include mixin.button(20px,   #007DB6,16px);
+
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__home-img {
+            position: relative;
+            top: 60px;
+
+            img {
+                @media screen and (max-width: 480px) {
+                    // position: relative;
+                    // top: 90px;
+                    width: 350px;
+                }
+
+                width: 570px;
+            }
+        }
+    }
+}

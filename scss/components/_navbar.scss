@@ -1,0 +1,46 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+
+header {
+    background-color: #F4F9FB;
+
+    .nav {
+        @media screen and (max-width: 480px){
+            padding:  10px 20px;
+            @include mixin.flexbox(space-between, center, '', row);
+        }
+        padding: 15px 0;
+        @include mixin.flexbox(space-between, center, '', row);
+
+        &__logo img {
+            width: 200px;
+        }
+        &__btn {
+            @include mixin.flexbox(space-between, center, 20px, row);
+            @media screen and (max-width: 480px){
+                display: none;
+            }
+            button {
+                color: #007DB6;
+                padding: 12px 24px;
+                border: 2px solid #007DB6;
+                background-color: transparent;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: ease 0.5s;
+                &:hover {
+                    background-color: #007DB6;
+                    color: white;
+                }
+            }
+        }
+        &__menu_btn{
+            display: none;
+            @media screen and (max-width: 480px){
+                display: block;
+            }
+        }
+    }
+
+}

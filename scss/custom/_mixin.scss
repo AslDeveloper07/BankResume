@@ -1,0 +1,20 @@
+@mixin flexbox($justify-content, $align-items, $gap, $flex-direction: row) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+    flex-direction: $flex-direction;
+}
+
+@mixin button($margin-top,  $bg-color, $fonst-size) {
+    margin-top: $margin-top;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 500;
+    color: white;
+    background-color:  $bg-color;
+    font-size: $fonst-size;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}

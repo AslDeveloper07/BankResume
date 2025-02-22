@@ -1,0 +1,113 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+.events {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.events__title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.events__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.event-card {
+    background: white;
+    border-radius: 20px;
+    background-color: #F4F9FB;
+}
+.event-card--large {
+    grid-column: span 2;
+}
+.event-card__image {
+    width: 100%;
+    height: 250px;
+    background-image: url(./../../resources/img/Rectangle\ 18.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.event-card__image2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./../../resources/img/Rectangle\ 18\ \(1\).png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+}
+
+.event-card__image3 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./../../resources/img/Rectangle\ 18\ \(4\).png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+
+}
+
+.event-card__image4{
+    width: 100%;
+    height: 250px;
+    background-image: url(./../../resources/img/Rectangle\ 18\ \(3\).png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 440px;
+    border-radius: 15px;
+}
+.event-card__image5{
+    width: 100%;
+    height: 250px;
+    background-image: url(./../../resources/img/Rectangle\ 18\ \(2\).png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 440px;
+    border-radius: 15px;
+
+}
+
+
+.event-card__content {
+    text-align: left;
+    padding: 10px 20px;
+}
+.event-card__date {
+    font-size: 14px;
+    color: #888;
+}
+.event-card__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.event-card__description {
+    font-size: 14px;
+    color: #555;
+}
+.events__more {
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #007DB6;
+    text-decoration: none;
+}
+@media (max-width: 1024px) {
+    .events__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .event-card--large {
+        grid-column: span 1;
+    }
+}
+@media (max-width: 768px) {
+    .events__grid {
+        grid-template-columns: 1fr;
+    }
+}

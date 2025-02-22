@@ -1,0 +1,75 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+
+.aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    // height: 80vh;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+    @include mixin.flexbox(flex-start, start, '', column);
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 0 20px;
+    }
+
+    &__button {
+        margin-top: 20px;
+        .menu-btn {
+            @include mixin.button(30px, #007DB6, 18px);
+            width: 100%;
+        }
+
+        .btn-trans {
+            @media screen and (max-width: 480px) {
+                width: 100%;
+            }
+
+            margin-top: 20px;
+            padding: 12px 24px;
+            border: 2px solid #007DB6;
+            background-color: transparent;
+            font-size: 16px;
+            color: #007DB6;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: ease 0.5s;
+
+            &:hover {
+                background-color: #007DB6;
+                color: white;
+            }
+        }
+    }
+
+    &__txt {
+        margin-top: 30px;
+        @include mixin.flexbox(flex-start, start, '', column);
+
+        span {
+            padding: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007DB6;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.transform {
+    transform: translateY(-100%);
+}

@@ -1,0 +1,124 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+
+.rivojlanish {
+    background-color: #F4F9FB;
+    border-radius: 20px;
+    @media screen and (max-width: 480px) {
+        padding: 0 0px;
+        width: 200px;
+    }
+    &__txt {
+        @include mixin.flexbox(space-between, center, '', row);
+        margin-top: 90px;
+        padding: 60px;
+        height: 300px;
+        @media screen and (max-width: 480px) {
+            padding: 0 20px;
+            margin-top: 100px;
+        }
+        .txt1 {
+            @media screen and (max-width: 480px) {
+                text-align: center;
+            }
+            h1 {
+                font-size: 40px;
+                font-weight: 800;
+            }
+            p {
+                margin-top: 20px;
+                color:  #4b4b4b;
+                width: 400px;
+                font-size: 20px;
+                @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
+            #rivojlanish_btn {
+                @include mixin.button(20px,   #007DB6,18px);
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                }
+            }
+        }
+        .img img {
+            margin-right: 200px;
+            position: relative;
+            top: -10px;
+            width: 350px;
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.rivojlanishuz {
+    @include mixin.flexbox(space-between, center, '', row);
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+    &__card {
+        @include mixin.flexbox(start, end, 20px, row);
+        margin-top: 50px;
+        margin-bottom: 130px;
+        .box1 {
+            @include mixin.flexbox(start, start, '', column);
+            width: 453px;
+            height: 170px;
+            background-color: #FF879F;
+            border-radius: 10px;
+            padding: 30px 40px;
+            span {
+                color: white;
+                margin-top: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            p {
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        .box2 {
+            @include mixin.flexbox(start, start, '', column);
+            width: 453px;
+            height: 170px;
+            background-color: #65B2D6;
+            border-radius: 10px;
+            padding: 30px 40px;
+            span {
+                color: white;
+                margin-top: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            p {
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        .box3 {
+            @include mixin.flexbox(start, start, '', column);
+            width: 453px;
+            height: 170px;
+            background-color: #F0D075;
+            border-radius: 10px;
+            padding: 30px 40px;
+            span {
+                color: white;
+                margin-top: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            p {
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@use './../custom/varable';
+@use './../custom/mixin';
+
+.welcome {
+    @include mixin.flexbox(space-between, center, '', row);
+    width: 100%;
+    height: 430px;
+    background-color: #F4F9FB;
+    border-radius: 20px;
+    padding: 40px;
+    @media screen and (max-width: 480px) {
+        @include mixin.flexbox(space-between, center, '', column-reverse);
+        position: relative;
+        top: -10px;
+        padding: 0 20px;
+        height: 630px;
+    }
+    &__div {
+        @include mixin.flexbox(start, end, 20px, column);
+        @media screen and (max-width: 480px) {
+            @include mixin.flexbox(center, center, 20px, column);
+            padding: 0 20px;
+        }
+        .box1 {
+            @include mixin.flexbox(start, start, '', column);
+            width: 600px;
+            height: 170px;
+            background-color: #FF879F;
+            border-radius: 10px;
+            padding: 30px 40px;
+            @media screen and (max-width: 480px) {
+                @include mixin.flexbox(center, start, '', column);
+                width: 435px;
+                margin-top: 30px;
+                padding: 30px 30px;
+            }
+            span {
+                color: white;
+                margin-top: 25px;
+                font-size: 25px;
+                font-weight: 600;
+                @media screen and (max-width: 480px) {
+                    font-size: 30px;
+                }
+            }
+            p {
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+                @media screen and (max-width: 480px) {
+                    font-size: 16px;
+                }
+            }
+        }
+        .box2 {
+            @include mixin.flexbox(start, start, '', column);
+            width: 600px;
+            height: 170px;
+            background-color: #65B2D6;
+            border-radius: 10px;
+            padding: 30px 30px;
+            @media screen and (max-width: 480px) {
+                @include mixin.flexbox(center, start, '', column);
+                width: 435px;
+                margin-bottom: 30px;
+            }
+            span {
+                color: white;
+                margin-top: 25px;
+                font-size: 25px;
+                font-weight: 600;
+                @media screen and (max-width: 480px) {
+                    font-size: 30px;
+                }
+            }
+            p {
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+                @media screen and (max-width: 480px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &__txt {
+        width: 470px;
+        @media screen and (max-width: 480px) {
+            padding: 0 20px;
+            text-align: center;
+            position: relative;
+            top: 30px;
+        }
+        h1 {
+            font-size: 45px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 350;
+            width: 400px;
+            @media screen and (max-width: 480px) {
+                font-size: 18px;
+            }
+        }
+        #well-btn {
+            @include mixin.button(30px, #007DB6,18px);
+
+            @media screen and (max-width: 480px) {
+                width: 100%;
+            }
+        }
+    }
+}
