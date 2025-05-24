@@ -5,7 +5,7 @@ Bu Figma dizayni asosida yaratilgan responsive (moslashuvchan) bank resume veb s
 ## 🎨 Figma Dizayni
 
 Asl Figma dizaynini bu yerda ko‘rishingiz mumkin:  
-[[Bu yerga Figma linkini joylashtiring]](https://www.figma.com/design/4VP9NDsbWR2qLmQFHIJGmU/%F0%9F%8E%AF-%D0%91%D0%B0%D0%BD%D0%BA-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5--Pages-~15000-16500?node-id=108-12933&t=6rY594IOyDAucQbR-0)
+https://www.figma.com/design/4VP9NDsbWR2qLmQFHIJGmU/%F0%9F%8E%AF-%D0%91%D0%B0%D0%BD%D0%BA-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5--Pages-~15000-16500?node-id=108-12933&t=6rY594IOyDAucQbR-0
 
 ## 📝 Loyiha Tavsifi
 
