@@ -1,36 +1,36 @@
-# 🏦 Bank Resume Veb Sayti
+# 🏦 Bank Resume Website
 
-Bu Figma dizayni asosida yaratilgan responsive (moslashuvchan) bank resume veb sayti. Sayt desktop va mobil qurilmalarda yaxshi ishlaydi va qulay, chiroyli interfeysga ega. Ushbu loyiha faqat bitta sahifa uchun kod yozilgan.
+This is a responsive bank resume website built based on a Figma design. The site supports both desktop and mobile devices with a clean and user-friendly interface. This project contains code for only a single page.
 
-## 🎨 Figma Dizayni
+## 🎨 Figma Design
 
-Asl Figma dizaynini bu yerda ko‘rishingiz mumkin:  
+You can view the original Figma design here:  
 https://www.figma.com/design/4VP9NDsbWR2qLmQFHIJGmU/%F0%9F%8E%AF-%D0%91%D0%B0%D0%BD%D0%BA-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5--Pages-~15000-16500?node-id=108-12933&t=6rY594IOyDAucQbR-0
 
-## 📝 Loyiha Tavsifi
+## 📝 Project Description
 
-- **HTML**, **SCSS**, va **JavaScript** yordamida yaratilgan.  
-- To‘liq responsive bo‘lib, turli ekran o‘lchamlariga, jumladan desktop va mobilga moslashadi.  
-- Figma prototipiga asoslangan toza, zamonaviy va qulay dizayn.  
-- Loyihada faqat bitta sahifa uchun kod yozilgan.
+- Built with **HTML**, **SCSS**, and **JavaScript**.  
+- Fully responsive and adapts smoothly to different screen sizes (desktop and mobile).  
+- Clean, elegant, and easy-to-use design based on the Figma prototype.  
+- The code covers only one page of the website.
 
-## ✨ Xususiyatlar
+## ✨ Features
 
-- Desktop va mobil uchun moslashuvchan tartib  
-- Figma asosida toza va zamonaviy dizayn  
-- JavaScript yordamida yumshoq animatsiyalar va interaktivlik  
-- SCSS yordamida modul va boshqarilishi oson stillar
+- Responsive layout for desktop and mobile devices  
+- Clean and modern design based on Figma  
+- Smooth interactivity and animations using JavaScript  
+- SCSS for modular and maintainable styling
 
-## 🛠 Foydalanilgan Texnologiyalar
+## 🛠 Technologies Used
 
-- **HTML5** – Tuzilish va markup  
-- **SCSS** – O‘zgaruvchilar va nesting bilan ilg‘or stillash  
-- **JavaScript** – Dinamik funktsiyalar va UI interaktivligi
+- **HTML5** – Markup and structure  
+- **SCSS** – Styling with variables and nesting  
+- **JavaScript** – Dynamic features and UI interactions
 
-## 🚀 Qanday Ishga Tushurish
+## 🚀 How to Run
 
-Asosiy HTML faylini (masalan, `index.html`) zamonaviy brauzerda oching va sahifani ko‘ring.
+Open the main HTML file (e.g., `index.html`) in any modern web browser to view the page.
 
 ---
 
-> 👨‍💻 Figma dizayniga asoslangan o‘rganish loyihasi sifatida ishlab chiqilgan.
+> 👨‍💻 Developed as a learning project following a Figma design.
